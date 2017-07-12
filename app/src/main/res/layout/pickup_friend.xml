@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#FFF"
+    >
+
+
+    <TextView
+        android:id="@+id/pickup_firend_smple_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want your friend to pick you up?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/image_container_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/pickup_firend_smple_text">
+
+
+        <ImageView
+            android:id="@+id/smple_iv"
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:src="@drawable/friends_empty_phone"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/simple_txt_des"
+            android:layout_below="@+id/smple_iv"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="#403f3f"
+            android:text="Send a pick request to your friend and we will grab your coordinates of current location, and share it with your friend to assist him to find you."
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_container_rl"
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/pickup_firend_send_message_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="4.5"
+            android:textColor="#fff"
+            android:text="Send Message"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:background="@drawable/btn_bg"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/pickup_firend_send_email_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="4.5"
+            android:textColor="#fff"
+            android:text="Send Email"
+            android:gravity="center"
+            android:background="@drawable/btn_bg"
+            android:textSize="17sp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fffefe"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp">
+
+
+    <ImageView
+        android:id="@+id/go_frg_turns_iv"
+        android:layout_width="81dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/turn_left" />
+
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/go_frg_turns_iv">
+
+        <TextView
+            android:id="@+id/go_frg_tunrs_distance_in_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="2"
+            android:text="1.0 Km"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/go_frg_tunrs_road_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="IJP Road"
+            android:textColor="#43a0fa"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:layout_below="@+id/go_frg_tunrs_distance_in_km"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

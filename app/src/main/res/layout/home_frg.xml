@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="wrap_content">
+
+   <fragment
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/fragment_map2"
+       android:name="com.google.android.gms.maps.SupportMapFragment"
+       />
+
+   <com.sa90.materialarcmenu.ArcMenu
+
+       android:id="@+id/arcMenu"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|right"
+       app:menu_color="@color/colorPrimaryDark"
+       app:menu_radius="90dp"
+       app:menu_ripple_color="@color/colorAccent"
+       app:menu_scr="@drawable/more_dots_vertical"
+       app:menu_open="arc_left"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true"
+       android:layout_marginBottom="30dp">
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab_satellite"
+          android:layout_width="wrap_content"
+          android:src="@drawable/maps_satellite"
+          app:fabSize="normal"
+          app:backgroundTint="@color/colorPrimary"
+          android:layout_height="wrap_content" />
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab_default"
+          android:layout_width="wrap_content"
+          android:src="@drawable/road_maps"
+          android:layout_height="wrap_content"
+          app:fabSize="normal"
+          app:backgroundTint="@color/colorPrimary"
+          />
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab_hybrid"
+          android:layout_width="wrap_content"
+          app:fabSize="normal"
+          android:src="@drawable/hybrid_maps"
+          android:layout_height="wrap_content"
+          app:backgroundTint="@color/colorPrimary"
+          />
+
+
+
+   </com.sa90.materialarcmenu.ArcMenu>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/activity_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+   <!--<fragment-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"-->
+       <!--android:id="@+id/fragment_map2"-->
+       <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+       <!--/>-->
+
+<!--</RelativeLayout>-->

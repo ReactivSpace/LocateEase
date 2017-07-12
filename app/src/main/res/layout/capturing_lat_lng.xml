@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/material_dialog_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/smple_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:maxLines="2"
+        android:text="Getting Location"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smple_text"
+        android:paddingTop="20dp"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/private_job_progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:indeterminate="true" />
+
+
+        <TextView
+            android:id="@+id/second_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/private_job_progressBar"
+            android:gravity="left"
+            android:text="Please wait while fetching your current location"
+            android:textColor="#4b4b4b"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

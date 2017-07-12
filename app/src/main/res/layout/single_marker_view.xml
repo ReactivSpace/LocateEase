@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/more_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/background_border"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/dots"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share_image"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dots"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="Share"
+                />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.5"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/favourite_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@drawable/background_border"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/favourites"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/favourite"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favourites"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp"
+                android:text="Favourite"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.5"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/navigation_go_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/background_border"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/navigation_go"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/go_nav"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navigation_go"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp"
+                android:text="Go"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/single_marker_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/single_marker_address_sourse_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            >
+
+            <TextView
+                android:id="@+id/single_marker_location_address_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/single_marker_location_sourse_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/single_marker_location_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textColor="#414141"
+                android:layout_below="@+id/single_marker_location_sourse_simple"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/single_marker_location_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_marker_address_sourse_container"
+            android:text="Name Of Location"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:paddingTop="3dp"
+            />
+        <TextView
+            android:id="@+id/single_marker_location_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_marker_location_name"
+            android:text="address of location"
+            android:textColor="#414141"
+            android:textSize="17sp"
+            android:layout_alignParentLeft="true"
+            android:maxLines="2"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/single_marker_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_container"
+        android:layout_below="@+id/single_marker_info_container"
+        android:background="@drawable/background_border"
+        android:padding="2dp">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_map_single_marker"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

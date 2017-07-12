@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+
+
+        <!--Purple Container-->
+        <RelativeLayout
+            android:id="@+id/maps_view_purple_container"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="3.3"
+            android:background="#FFF">
+
+
+            <TextView
+                android:id="@+id/purple_container_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="#f105af"
+                android:text="0min"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/purple_container_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="13sp"
+                android:textColor="#f105af"
+                android:layout_below="@+id/purple_container_time_tv"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="0.0 km"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="#acacac"
+            android:layout_weight="0.05"
+            />
+
+        <!--Blue Container-->
+        <RelativeLayout
+            android:id="@+id/maps_view_blue_container"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="3.3"
+            android:background="#FFF">
+
+
+            <TextView
+                android:id="@+id/blue_container_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="#391eff"
+                android:text="0min"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/blue_container_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="13sp"
+                android:textColor="#391eff"
+                android:layout_below="@+id/blue_container_time_tv"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="0.0 km"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="#acacac"
+            android:layout_weight="0.05"
+            />
+
+        <!--Green Container-->
+        <RelativeLayout
+            android:id="@+id/maps_view_green_container"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="3.3"
+            android:background="#FFF">
+
+
+            <TextView
+                android:id="@+id/green_container_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="#02c710"
+                android:text="0min"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/green_container_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="13sp"
+                android:textColor="#02c710"
+                android:layout_below="@+id/green_container_time_tv"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="0.0 km"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#FFF"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/via_route_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Via: Route to the destination"
+            android:textColor="#4d4d4d"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textSize="19sp"
+            />
+
+        <Button
+            android:id="@+id/alternative_routes_go_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="GO"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/via_route_tv"
+            />
+
+
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/top_container"
+        android:layout_above="@+id/button_container"
+        />
+
+
+
+
+</RelativeLayout>
